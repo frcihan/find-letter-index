@@ -28,33 +28,54 @@ body{
 }
 .inputbox{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-#entry{
-    height: 5vh;
+.entry{
+    display: flex;
+    justify-content: space-between;
+}
+
+#entryText{
+    min-height: 5vh;
+    width: 86%;
     font-size: 1.5rem;
     border-radius: 10px;
     padding: 5px;
+    border: 2px solid #48A5FF;
+}
+
+#entryLetter{
+    min-height: 5vh;
+    width: 13%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid #B280EE;
 }
 
 #find{
-    height: 5vh;
+    min-height: 5vh;
     border-radius: 10px;
     padding: 5px;
-    margin-left: 5px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     background-color: #FF6977;
     color: #fff;
     font-weight: bold;
+    min-width: 12vw;
+    align-self: center;
+    margin-top: 10px;
 }
 
 #result{
     color: #111;
-    width: 12vw;
-    height: 5vh;
+    min-width: 10vw;
+    min-height: 5vh;
     font-size: 1.5rem;
     padding: 9px;
     background-color: #fff;
     border-radius: 10px;
+    text-align: center;
+    border: 2px solid #FF6977;
 }
