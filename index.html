@@ -9,10 +9,24 @@
 <body>
     <div class="container">
         <div class="inputbox">
-            <input type="text" id="entry" placeholder="Please enter text here...">
-            <button type="submit" id="find">Find Letter Index</button>
+            <div class="entry">
+                <input type="text" id="entryText" placeholder="Please enter text here...">
+                <input type="text" id="entryLetter" placeholder="Letter">
+            </div>
+            <button type="submit" id="find" onclick="myFunc()">Find Letter Index</button>
         </div>
-        <p id="result">Letter Index : </p>
+        <p id="result">Letter Index: </p>
     </div>
+    <!-- <script src="./script.js"></script> -->
+    <script>
+        function myFunc(){
+            const entryText = document.getElementById("entryText").value;
+            const entryLetter = document.getElementById("entryLetter").value;
+
+            const index = entryText.indexOf(entryLetter);
+
+            document.getElementById("result").innerHTML="Letter Index: " + index;
+        }
+    </script>
 </body>
 </html>
