@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    background: url("./bg.jpg"), rgba(255, 255 , 255, 0.2);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    border: 2px solid red;
+}
