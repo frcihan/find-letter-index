@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html{
-    background: url("./bg.jpg"), rgba(255, 255 , 255, 0.2);
+    background: url("./images/bg.jpg"), rgba(255, 255 , 255, 0.2);
     background-blend-mode: lighten;
     background-repeat: no-repeat;
     background-size: cover;
