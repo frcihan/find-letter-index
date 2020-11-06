@@ -8,6 +8,8 @@ html{
     background-blend-mode: lighten;
     background-repeat: no-repeat;
     background-size: cover;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     width: 100vw;
@@ -19,8 +21,40 @@ body{
 
 .container{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 50vh;
-    border: 2px solid red;
+    justify-content: space-evenly;
+    height: 40vh;
+}
+.inputbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+#entry{
+    height: 5vh;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#find{
+    height: 5vh;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 1.2rem;
+    background-color: #FF6977;
+    color: #fff;
+    font-weight: bold;
+}
+
+#result{
+    color: #111;
+    width: 12vw;
+    height: 5vh;
+    font-size: 1.5rem;
+    padding: 9px;
+    background-color: #fff;
+    border-radius: 10px;
 }
