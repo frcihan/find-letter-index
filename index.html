@@ -27,11 +27,11 @@
             if(entryText == ""){
                 document.getElementById("result").innerHTML="Please enter a text";
             }
-            else if (index > 0){
-                document.getElementById("result").innerHTML="Letter Index: " + index;
-            }
-            else if(index == 0){
+            else if(entryLetter == ""){
                 document.getElementById("result").innerHTML="Please enter a letter";
+            }
+            else if (index > -1){
+                document.getElementById("result").innerHTML="Letter Index: " + index;
             }
             else{
                 document.getElementById("result").innerHTML="Letter not found";
